@@ -44,7 +44,7 @@ function LogIn() {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3000/login",
+        "http://localhost:3000/api/users/login",
         {
           Email: ValidationEmail,
           Password: ValidationPassword,
@@ -62,8 +62,8 @@ function LogIn() {
         alert("Internal Server Error");
       }
     }
-    console.log(`Email : ${ValidationEmail}`);
-    console.log(`Password : ${ValidationPassword}`);
+    // console.log(`Email : ${ValidationEmail}`);
+    // console.log(`Password : ${ValidationPassword}`);
   }
 
   return (

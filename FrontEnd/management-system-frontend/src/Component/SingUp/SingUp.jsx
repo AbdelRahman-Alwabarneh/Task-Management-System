@@ -81,14 +81,14 @@ function SingUp() {
       setVerificationSendPassword("hidden");
     }
 
-    console.log(`First Name : ${FirstName}`);
-    console.log(`Last Name : ${LastName}`);
-    console.log(`Email : ${ValidationEmail}`);
-    console.log(`Password : ${ValidationPassword}`);
+    // console.log(`First Name : ${FirstName}`);
+    // console.log(`Last Name : ${LastName}`);
+    // console.log(`Email : ${ValidationEmail}`);
+    // console.log(`Password : ${ValidationPassword}`);
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/signup",
+        "http://localhost:3000/api/users/signup",
         {
           First_Name: FirstName,
           Last_Name: LastName,

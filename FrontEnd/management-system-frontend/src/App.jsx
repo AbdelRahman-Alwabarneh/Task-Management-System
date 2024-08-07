@@ -1,6 +1,7 @@
 import './App.css'
 import SingUp from './Component/SingUp/SingUp'
 import LogIn from './Component/LogIn/Login';
+import TaskManager from './Component/Home/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
 
           <Route path="/signup" element={<SingUp />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/" element={<TaskManager />} />
+          
         
         </Routes>
       </BrowserRouter>
